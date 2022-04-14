@@ -16,7 +16,7 @@ Unless you make explicit edits to the docker-compose, all default passwords will
 2. If using SSL, be sure to place your certicates and keys in the certs folder
 2a. If you just want to use http, change the line from 443 ssl to 80 and remove the cert locations.
 3. update the nginx conf with the names of certificates
-4. Review the docker-compose for any additional changes you'd like to make
+4. Review the docker-compose for any additional changes you'd like to make.  NOTE: **Update your location for nginx conf and certs!**
 5. Run ```docker-compose up -d``` to bring up the environment
 
 If you installed with ssl, you can find your environment at https://localhost or whatever port you set this as.
