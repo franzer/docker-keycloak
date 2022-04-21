@@ -29,7 +29,8 @@ That's it, you're now ready to go!  Good luck!
 
 We can use the native tools inside the keycloak container to export our realm with client secrets and use the same for importing:
 
-EXPORT TEMPLATE:
+**EXPORT TEMPLATE:**
+
 [podman | docker] exec -it <pod_name> opt/jboss/keycloak/bin/standalone.sh
 	-Djboss.socket.binding.port-offset=<interger_value> Docker recommend  an offset of 100 at least
 	-Dkeycloak.migration.action=[export | import]
@@ -42,7 +43,8 @@ EXPORT TEMPLATE:
 
 
 
-IMPORT TEMPLATE:
+**IMPORT TEMPLATE:**
+	
 [podman | docker] exec -it <container_name> <PATH_TO_KEYCLOAK_IN_THE_POD>/bin/standalone.sh
 	 -Djboss.socket.binding.port-offset=100
 	 -Dkeycloak.migration.action=import
